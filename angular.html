@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    <style>
+        .amarillo {
+            background-color: yellow;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body ng-app="myApp" ng-controller="appcontroller">
+
+        <p><a href="#/!">Main</a></p>
+
+        <a href="#!consultar">consultar</a>
+        <a href="#!depositar">depositar</a>
+        <a href="#!retirar">retirar</a>
+        <a href="#!registrar">registrar</a>
+
+        <div ng-view=""></div>
+
+        <script src="moduleconfig.js"></script>
+        <script src="controllerconfig.js"></script>
+
+    </body>
+
+</html>
